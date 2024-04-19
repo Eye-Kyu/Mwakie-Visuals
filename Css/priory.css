@@ -1,0 +1,120 @@
+:root{
+    --primary_colour:#0A1A4D;
+    --secondary_colour:#DCEFFA;
+    --call2Action:#DDA911;
+    --accentcolour:#707070;
+    --touchupcolour:#D8D8D8;
+    --whiteout:#fff;
+    --black:#161616f6;
+
+}
+
+html,body{
+  width: 100%;
+  overscroll-behavior: none;
+  min-height: 100%;
+}
+@media only screen and (max-width: 900px) {
+    body{
+      overflow-x: hidden;
+    }
+  }
+  
+body p{
+    /*font-family: Montserrat;*/
+    font-size: 12px;
+    font-weight: lighter;
+}
+body h1{
+    /*font-family: Century Schoolbook;*/
+    font-size: 18px;
+    font-weight: lighter;
+
+}
+body h2,h3{
+    /*font-family: Biliner Meclan Demo;*/
+    font-size: 15px;
+    font-weight: 500;
+
+}
+  
+  *{
+  padding: 0;
+  box-sizing: border-box;
+  
+  }
+  body{
+  padding: 0;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  
+  }
+  video{
+    width: 100vw;
+    height: auto;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  html.lenis{
+    height: auto;
+  }
+  .lenis.lenis-smooth{
+    scroll-behavior: auto;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent]{
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped{
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe{
+    pointer-events: none;
+  }
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+.cursor{
+  position: fixed;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform .1s;
+}
+.cursor{
+  background: black;
+  z-index: 999;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  display: none;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9099;
+}
+path{
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+

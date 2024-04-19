@@ -1,0 +1,67 @@
+.kanosta{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--touchupcolour);
+    overflow: hidden;
+}
+.about{
+    display: grid;
+    width: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0rem;
+    padding-left: 1em;
+    
+}
+.about p{
+    font-size: 16em;
+    font-stretch: extra-expanded;
+    letter-spacing: .5em;
+    font-weight: lighter;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    margin: 0;
+    color: var(--accentcolour);
+}
+.texts{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height:auto;
+    width: 100vw;
+    padding-top: 6rem;
+    z-index: 2;
+}
+.texts p{
+    line-height: 1.4rem;
+}
+.first-text{
+    height: 70vh;
+    display: flex;
+}
+.first-text p{
+    padding-left: 2rem;
+    padding-top: 1.7rem;
+    width: 80%;
+   
+}
+.second-text{
+    height: 70vh;
+    display: flex;
+    padding-top: 6rem;
+}
+.second-text p{
+    padding-left: 2rem;
+    width: 81%;
+    padding-right: 1rem;
+    z-index: 2;
+}
+
+.about-image{
+    z-index: 3;
+    width: 18rem;
+}
+.about-image img{
+    height: 26rem;
+    box-shadow: 1px 2px 2px 2px rgb(74, 67, 67);
+}

@@ -1,0 +1,110 @@
+body{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hero{
+  display: grid;
+  place-items: center;
+  background-color: white;
+  height: auto;
+}
+.title-name{
+ text-align: center;
+ z-index: 2;
+ max-width: 10ch;
+ mix-blend-mode: difference;
+ color: white;
+ font-weight: lighter;
+ top: 150%;
+ position: absolute;
+}
+.title-name div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6.3rem;
+  letter-spacing: 2rem;
+}
+
+.hero img{
+  position: absolute;
+  box-shadow: 2px 3px 3px rgba(24, 24, 24, 0.61);
+}
+.hero-mbisha{
+  height: auto;
+}
+.hero img:nth-child(1){
+  width: 17.4rem;
+  height: 23.1rem;
+  left: 2rem;
+  top: 0;
+}
+.hero img:nth-child(2){
+  width: 20.1rem;
+  height: 28.6rem;
+  left: 62.6rem;
+  top: 3rem;
+}
+.hero img:nth-child(3){
+  width: 22.1rem;
+  height: 29.4rem;
+  right: 24rem;
+  top: 12rem;
+}
+.hero img:nth-child(4){
+  width: 17.4rem;
+  height: 15.9rem;
+  right: 47.2rem;
+  top: 16.8rem;
+  border-radius: 5%;
+}
+.hero img:nth-child(5){
+  width: 20rem;
+  height: 19rem;
+  right: 0;
+  top:36rem;
+  border-radius: 50%;
+}
+.hero img:nth-child(6){
+  width: 22rem;
+  height: 9rem;
+  right: 30rem;
+  top: 0;
+}
+.hero img:nth-child(7){
+  width: 12.4rem;
+  height: 9.9rem;
+  left: 3.2rem;
+  bottom: 0;
+}
+.hero img:nth-child(8){
+  width: 20.4rem;
+  height: 16.9rem;
+  left: 3.2rem;
+  top: 79rem;
+  border-radius: 0.6%;
+}
+.hero img:nth-child(9){
+  width: 18.4rem;
+  height: 34.9rem;
+  right: 0rem;
+  top: 59rem;
+}
+.hero img:nth-child(10){
+  width: 45.4rem;
+  height: 27.9rem;
+  left: 19.2rem;
+  top: 43rem;
+}
+.hero img:nth-child(11){
+  width: 19.4rem;
+  height: 21.9rem;
+  left: 30.2rem;
+  top: 74rem; 
+}
+.hero img:nth-child(12){
+  width: 18.4rem;
+  height: 18.9rem;
+  left: 0;
+  top: 50rem; 
+  border-radius: 50%;
+}

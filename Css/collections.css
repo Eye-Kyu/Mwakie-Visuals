@@ -1,0 +1,45 @@
+section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+    margin: 0 auto;
+}
+.gallery {
+    height: 200vh;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    z-index: -1;
+
+    &:nth-of-type(1) {background-image: url(/Images/graduate.jpg);}
+    &:nth-of-type(2) {background-image: url(/Images/graduation.jpg);}
+    &:nth-of-type(3) {background-image: url(/Images/wedding.jpg);}
+    &:nth-of-type(4) {background-image: url(/Images/sinary.jpg);}
+    &:nth-of-type(5) {background-image: url(/Images/viuu.jpg);}
+    &:nth-of-type(6) {background-image: url(/Images/Portrait.jpg);}
+    &:nth-of-type(7) {background-image: url(/Images/mwangi_kirungoh_1710512906894.jpeg);}
+    &:nth-of-type(8) {background-image: url(/Images/Monochrome.jpg);}
+    &:nth-of-type(9) {background-image: url(/Images/Mnisa.jpg);}
+    &:nth-of-type(10) {background-image: url(/Images/Mie.jpg);}
+    &:nth-of-type(11) {background-image: url(/Images/mbucha.jpg);}
+    &:nth-of-type(12) {background-image: url(/Images/mbucha.JPG);}
+    &:nth-of-type(13) {background-image: url(/Images/Landimbisha.jpg);}
+    &:nth-of-type(14) {background-image: url(/Images/Kendrick\ Lamar.jpeg);}
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 100vh;
+        width: 100vh;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        border-right: 1px solid black;
+    }
+}
+.line {
+    border-right: 1px solid black;
+}
