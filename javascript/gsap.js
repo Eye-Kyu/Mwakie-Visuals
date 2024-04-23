@@ -157,8 +157,7 @@ class App {
                     trigger: ".hero",
                     start: "top top",
                     end: "bottom top",
-                    scrub: true,
-                    markers: true
+                    scrub: true
                 }
             });
 
