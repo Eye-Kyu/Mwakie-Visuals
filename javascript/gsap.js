@@ -120,12 +120,12 @@ class App {
 
     _setInitialStates() {
         gsap.set(".hero_title span", {
-            x: 32,
+            y: 32,
             opacity: 0
         });
         gsap.set(".hero_images img", { 
             opacity: 0,
-            x: gsap.utils.random(100, 50)
+            y: gsap.utils.random(100, 50)
         });
     }
 
@@ -135,15 +135,15 @@ class App {
 
         tl.to(".hero_title div", { 
             opacity: 1
-        }).to(".hero_title span", {
-            x: 0,
+        }, 0.6).to(".hero_title span", {
+            y: 10,
             opacity: 1,
             ease: "expo.out",
             duration: 2,
-            stagger: 0.01
+            stagger: 0.02
         }).to(".hero_images img", {
             opacity: 1,
-            x: 0,
+            y: 0,
             ease: "power3.out",
             duration: 2,
             stagger: 0.04,
@@ -163,7 +163,7 @@ class App {
 
             tl.to(image, {
                 ease: "none",
-                xPercent: gsap.utils.random(-100, -50) + (index * 20), // Adjust parallax effect based on index
+                yPercent: gsap.utils.random(-100, -50) + (index * 10), // Adjust parallax effect based on index
                 duration: 1 // Duration of the parallax effect
             }, 0);
         });
@@ -180,12 +180,36 @@ class App {
 // Instantiate the App class
 const app = new App();
 
+
+
 const heroPage = document.querySelector(".hero");
 
  heroPage.addEventListener("scroll", function (e) {
     const horizontalScroll = e.target.scrollLeft;
     });
 
-    console.log(horizontalScroll)
+    console.log("horizontalScroll");
 
 
+/*
+const sectionScroll = document.querySelector(".hero");
+let sectionScrollWidth = sectionScroll.offsetWidth;
+let amountToScroll = sectionScrollWidth - window.innerWidth;
+
+const tween = gsap.to(sectionScroll, {
+    x: - amountToScroll,
+    duration: 3,
+    ease: "none"
+    
+});
+
+ScrollTrigger.create({
+    trigger:".move_righter",
+    start:"top top",
+    end:"+=" + amountToScroll,
+    pin: true,
+    Animation:tween,
+    scrub:1,
+    markers:true
+})
+*/

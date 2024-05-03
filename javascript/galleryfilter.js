@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const itemsContainer = document.querySelector(".items");
     const itemsCols = document.querySelectorAll(".items-col");
     const filters = document.querySelectorAll(".filter");
-    const defaultFontSize = "65px";
-    const activeFontSize = "250px";
+    const defaultFontSize = "52px";
+    const activeFontSize = "140px";
 
     function splitTextIntoSpans(selector) {
         const elements = document.querySelectorAll(selector);
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             fontSize: fontSize,
             stagger: 0.025,
             duration: 0.5,
-            ease: "power2.out",
+            ease: "power1.out",
         });
     }
 
@@ -78,8 +78,7 @@ filters.forEach((filter) => {
             return;
         }
 
-        const previousActiveFilterH1 = 
-            document.querySelector(".filter.actve h1");
+        const previousActiveFilterH1 = document.querySelector(".filter.active h1");
             animateFontSize(previousActiveFilterH1, defaultFontSize);
 
         filters.forEach((f) => f.classList.remove("active")); 
