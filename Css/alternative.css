@@ -1,8 +1,14 @@
+body{
+    background: #FFEEEE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cadba7, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e4eed1, #fdf3f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
 .hero {
     display: grid;
     place-items: center;
-    background-color: var(--whiteout);
-    height: 300vh;
+    /*background-color: var(--whiteout);*/
+    height: 200vh;
 }
 .hero_title {
     text-align: center;
@@ -113,4 +119,96 @@ h1 span{
     font-weight: 400;
     letter-spacing: -0.03em;
     line-height: 1;
+}
+
+
+
+.contente{
+    position: relative;
+    /*background-color: rgba(255, 255, 255, 0.925);*/
+    height: 100vh;
+    padding-top: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    pointer-events: none;
+}
+.proceedings h1{
+    font-size: 5.7em;
+    font-stretch:extra-expanded;
+    padding-left: .5em;
+}
+.proceedings h2 {
+    font-size: 10em;
+    position: absolute;
+    right: 0;
+    top: 12%;
+    font-stretch:ultra-expanded;
+    letter-spacing: 16px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+.contente p {
+    width:56%;
+    line-height: 28px;
+    font-size: 12px;
+    padding-left: 6em;
+    font-stretch: extra-expanded;
+    mix-blend-mode: difference;
+    color: rgb(255, 255, 255);
+}
+
+
+.fullwidth-image {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    clip-path: polygon(5% 10%, 95% 10%, 95% 90%, 5% 90%);
+}
+.fullwidth-image img {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.fullwidth-image_overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-color: black;
+    opacity: 0;
+}
+.fullwidth-image_text {
+    position: absolute;
+    z-index: 15;
+    top: 60%;
+    left: 30%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+.fullwidth-image_text h2{
+    font-size: 2em;
+}
+.fullwidth-image_text p {
+    font-size: .9em;
+}
+
+.follow {
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+}
+.follow h2 {
+    font-size: 4em;
+    text-align: center;
+}
+.footer-social {
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
 }
