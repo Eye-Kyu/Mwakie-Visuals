@@ -1,3 +1,4 @@
+
 /*
 const lenis = new Lenis()
 
@@ -14,6 +15,21 @@ requestAnimationFrame(raf)
 
 */
 gsap.registerPlugin(ScrollTrigger);
+
+const fuuta = document.querySelector(".follow-text");
+console.log(fuuta.offsetWidth)
+
+function getScrollAmount() {
+    let fuutaWidth = fuuta.scrollWidth;
+    return -(fuutaWidth - window.innerWidth);
+}
+
+const tween1 = gsap.to(fuuta, {
+    x: getScrollAmount,
+    duration: 2,
+    ease: "none",
+});
+
 
 const tlo = gsap.timeline({delay:0});
 
@@ -83,7 +99,7 @@ tlo.to(".insight", {
         scrollTrigger: {
             trigger: '.contente',
             start: 'top 50%',
-            end: "+=400",
+            end: "+=700",
             scrub: 1,
             duration: {min: 0.2, max: 3},
             ease: "power1.inOut"
@@ -99,7 +115,13 @@ tlo.to(".insight", {
     gsap.set('.fullwidth-image img', {
         scale: 1.3
     })
+    /*
+    gsap.set('.follow-text', {
+        x:2,
+        scale: 1.4
+    })
 
+    */
     
        
         const tli = gsap.timeline({
@@ -121,6 +143,15 @@ tlo.to(".insight", {
         }, 0).to('.fullwidth-image_text', {
             y: 0,
             opacity: 1
+        }, 0).to('.follow-text', {
+            x:-80,
+            scale: 1,
+            scrollTrigger: {
+                trigger: '.follow',
+                start: 'top top',
+                end: '+=400',
+                scrub: true,
+                duration: {min: 0.2, max: 3},
+                ease: "power2.inOut",                
+            }
         }, 0)
-
-

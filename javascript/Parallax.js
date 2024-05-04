@@ -1,16 +1,3 @@
-gsap.set(".cursor",{xPercent:-50, yPercent:-50})
-
-let cursor = document.querySelector(".cursor")
-
-let mouseX;
-let mouseY;
-
-window.addEventListener('mousemove', e => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-
-    gsap.to(cursor, 2, {x: mouseX, y: mouseY})
-});
 
 const trails = document.querySelectorAll(".trail");
 const smoothPointer = {
@@ -68,7 +55,7 @@ gsap.set(".second-text", {
     opacity: 0,
 })
 gsap.set(".about-image", {
-   scale: 0.02
+   opacity: 0.7
 })
 let tl = gsap.timeline({delay:0});
 
@@ -91,8 +78,8 @@ tl.to(".second-text", {
     ease: "power4.inOut"
 }, 0);
 tl.to(".about-image", {
-    scale: 1.1,
+    opacity: 1,
     duration: 4,
-    ease: "power6.inOut"
+    ease: "power6.in"
 }, 0);
 

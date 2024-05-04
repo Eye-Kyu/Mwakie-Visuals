@@ -6,13 +6,25 @@
     --touchupcolour:#D8D8D8;
     --whiteout:#fff;
     --black:#161616f6;
-
+}
+@font-face {
+  font-family: newMontreal;
+  src: url(/fonts/PPNeueMontreal-Medium.otf);
+}
+@font-face {
+  font-family: typewriter;
+  src: url(/fonts/Fragmentcore.otf);
+}
+@font-face {
+  font-family: basis;
+  src: url(/fonts/BasisGrotesquePro-Light.ttf);
 }
 
 html,body{
   width: 100%;
   overscroll-behavior: none;
   min-height: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 @media only screen and (max-width: 900px) {
     body{

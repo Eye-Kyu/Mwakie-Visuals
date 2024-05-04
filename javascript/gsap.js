@@ -1,3 +1,16 @@
+gsap.set(".cursor",{xPercent:-50, yPercent:-50})
+
+let cursor = document.querySelector(".cursor")
+
+let mouseX;
+let mouseY;
+
+window.addEventListener('mousemove', e => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    gsap.to(cursor, 2, {x: mouseX, y: mouseY})
+});
 
 gsap.registerPlugin(ScrollTrigger);
 /*
@@ -163,7 +176,7 @@ class App {
 
             tl.to(image, {
                 ease: "none",
-                yPercent: gsap.utils.random(-100, -50) + (index * 10), // Adjust parallax effect based on index
+                yPercent: gsap.utils.random(-60, -120) + (index * 10), // Adjust parallax effect based on index
                 duration: 1 // Duration of the parallax effect
             }, 0);
         });
@@ -190,6 +203,46 @@ const heroPage = document.querySelector(".hero");
 
     console.log("horizontalScroll");
 
+
+
+    //marquee animation on scroll
+    
+    let currentScroll = 0;
+    let isScrollingDown = true;
+    let arrows = document.querySelectorAll(".arrow");
+
+    let tween = gsap
+    .to(".marquee_part", {
+        xPercent: -100,
+        repeat: -1,
+        duration: 5,
+        ease: "linear"
+    })
+    .totalProgress(0.5);
+
+    gsap.set(".marquee_inner", {xPercent: -50});
+
+    window.addEventListener("scroll", function() {
+        if (this.window.pageYOffset > currentScroll) {
+            isScrollingDown = true;
+        } else {
+            isScrollingDown = false;
+        }
+        
+        gsap.to(tween, {
+            timeScale: isScrollingDown ? 1 : -1,
+        });
+
+        arrows.forEach((arrow) => {
+            if (isScrollingDown) {
+                arrow.classList.remove("active");
+            } else {
+                arrow.classList.add("active");
+            }
+        });
+
+        currentScroll = window.pageYOffset;
+    });
 
 /*
 const sectionScroll = document.querySelector(".hero");
