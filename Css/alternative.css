@@ -210,10 +210,14 @@ h1 span{
 .collabs {
     padding: .6em 1.8em .9em 1.8em;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 6px;
     background: inherit;
     border:  1px solid var(--touchupcolour);
+}
+.collabs  a{
+    text-decoration: none;
+    color: var(--whiteout);
 }
 
 
@@ -253,7 +257,8 @@ h1 span{
     font-size: 2em;
 }
 .fullwidth-image_text p {
-    font-size: .9em;
+    font-size: 1em;
+    font-family: basis;
 }
 
 .follow {
@@ -281,4 +286,49 @@ h1 span{
 }
 .footer-social ion-icon:hover {
     color: var(--black);
+}
+
+@media only screen and (max-width: 858px) {
+    body{
+      overflow-x: hidden;
+    }
+  
+  .spacer {
+    height: 300px;
+}
+.marquee {
+    margin-top: .6em;
+    padding: .5em 0;
+    font-weight: 100;
+    font-size: 1em;
+}
+.arrow {
+    width: 40px;
+    height: 60px;
+}.contente{
+    height: 80vh;
+    padding-top: .4em;
+    padding-left: .4em;
+    padding-right: .4em;
+}.proceedings h1{
+    font-size: 2.4em;
+}
+.proceedings h2 {
+    font-size: 2.4em;
+    right: 0;
+    top: 13%;
+    letter-spacing: 6px;
+}
+.contente p {
+    width:100%;
+    line-height: 28px;
+    font-size: 15px;
+    padding-top: 1.8em;
+}
+.fullwidth-image {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+}
 }
