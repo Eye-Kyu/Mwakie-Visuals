@@ -128,5 +128,22 @@ path{
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-
+nav {
+  display: flex;
+  z-index: 5;
+}
+.main-nav ul{
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  width: 100vw;
+  z-index: 6;
+}
+.main-nav ul li {
+  z-index: 7;
+}
+.logo1 {
+  display: flex;
+ justify-self: flex-start;
+}
 

@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const itemsContainer = document.querySelector(".items");
     const itemsCols = document.querySelectorAll(".items-col");
     const filters = document.querySelectorAll(".filter");
-    const defaultFontSize = "52px";
-    const activeFontSize = "140px";
+    const defaultFontSize = "26px";
+    const activeFontSize = "120px";
 
     function splitTextIntoSpans(selector) {
         const elements = document.querySelectorAll(selector);
@@ -22,8 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
         gsap.to(spans, {
             fontSize: fontSize,
             stagger: 0.025,
-            duration: 0.5,
-            ease: "power1.out",
+            duration: 0.7,
+            ease: "back.out(1.7)",
+            
         });
     }
 
@@ -94,3 +95,14 @@ filters.forEach((filter) => {
 
 
 });
+
+/*
+const tl3 = gsap.timeline({
+    tl3.to(".item-img", {
+        opacity: 1,
+        y: 20,
+        duration: 1,
+        ease: "power4.inOut"
+    }, 0);
+})
+*/
