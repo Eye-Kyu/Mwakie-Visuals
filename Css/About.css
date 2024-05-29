@@ -3,7 +3,6 @@
     width: 100vw;
     height: 100vh;
     background-color: var(--touchupcolour);
-    overflow: hidden;
 }
 .about{
     display: grid;

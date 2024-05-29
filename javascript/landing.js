@@ -98,7 +98,7 @@ tlo.to(".insight", {
        x: -80,
         scrollTrigger: {
             trigger: '.contente',
-            start: 'top 50%',
+            start: 'top 60%',
             end: "+=700",
             scrub: 1,
             duration: {min: 0.2, max: 3},

@@ -13,87 +13,87 @@ window.addEventListener('mousemove', e => {
 });
 
 gsap.registerPlugin(ScrollTrigger);
-/*
-class App {
-    constructor(){
-        this.herombisha = [...document.querySelectorAll('.hero-mbisha img')];
-        
-        this._initialize();
-        this._render();
-    }
 
-    _initialize() {
-        this._setInitialStates();
-        this._createLenis();
-        this._createIntro();
-        this._createHero();
-        this.createTextAnimation();
-    }
+const tl4 = gsap.timeline({ paused:true });
+let path = document.querySelector("path");
+let spanBefore = CSSRulePlugin.getRule("#hamburger span:before");
 
-    _setInitialStates() {
-        gsap.set('.title-name span', {
-            y:32,
-            opacity: 0
-        })
-        gsap.set('hero-mbisha img',{
-            opacity: 0,
-            y: gsap.utils.random(100, 50)
-        })
+gsap.set(spanBefore, {background:"#000"});
+gsap.set(".menu", {visibility:"hidden"});
 
-    }
+//toggles menu
+ function revealMenu() {
+   revealMenuItems();
 
-    _createLenis() {
-        this.lenis = new Lenis({
-            lerp: 0.1
-        })
-    }
-    _createIntro() {
-        const tl = gsap.timeline();
+   const hamburger = document.getElementById("hamburger");
+   const toggleBtn = document.getElementById("toggle-btn");
 
-        tl.to('title-name div', {
-            opacity: 1
-        }).to('.title-name span', {
-            y: 0,
-            opacity: 1,
-            ease: 'expo.out',
-            duration: 2,
-            stagger: 0.01
-        }).to('.hero-mbisha img', {
-            opacity: 1,
-            y: 0,
-            ease: 'power3.out',
-            duration: 2,
-            stagger: 0.04,
-        }, 0.5)
-    }
+   toggleBtn.onclick = function (e) {
+       hamburger.classList.toggle("active");
+       tl4.reversed(!tl4.reversed());
+   };
+ }
 
-    _createHero() {
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.hero',
-                start: 'top top',
-                end: 'bottom top',
-                scrub: true,
-                markers: true
-            }
-        });
+ revealMenu();
 
-        this.herombisha.forEach(image => {
-            tl.to(image, {
-                ease: 'none',
-                yPercent: gsap.utils.random(-100, -50)
-            }, 0)
-        })
-    }
+ function revealMenuItems() {
+   const start = "M0 502S175 272 500 272s500 230 500 230V0H0Z";
+   const end = "M0,1005S175,995,500,995s500,5,500,5V0H0Z";
 
-    _render(time) {
-        this.lenis.raf(time);
+   const power2 = "power2.inOut";
+   const power4 = "power4.inOut"; 
 
-        requestAnimationFrame(this._render.bind(this))
-    }
-}
+   tl4.to("#hamburger", 1.25, {
+       marginTop: "-5px",
+       x: -40,
+       y: 40,
+       ease: power4,
+   });
 
-*/
+   tl4.to("#hamburger span", 1, {
+       background: "#e2e2dc",
+       ease: power2,
+   },"<");
+
+   tl4.to(spanBefore, 1, {
+       background: "#e2e2dc",
+       ease: power2,
+   },"<");
+
+   tl4.to(".btn .btn-outline", 1.25,{
+       x: -30,
+       y: 30,
+       width: "20px",
+       height: "20px",
+       border: "1px solid #e2e2dc",
+       ease: power4,
+   }, "<");
+
+tl4.to(path, 0.8, {
+   attr: {
+       d: start,
+   },
+   ease: power2.easeIn,
+}, "<").to(path, 0.8, {
+   attr: {
+       d: end,
+   },
+   ease: power2.easeIn,
+}, "-0.5"); 
+
+tl4.to(".menu", 1, {
+   visibility: "visible",
+},"-=0.5");
+
+tl4.to(".menu-item > a", 1, {
+   top: 0,
+   ease: "power3.out",
+   stagger: {
+       amount: 0.5 
+   }
+},"-=1").reverse();
+
+ }
 
 
 /*lenis basic scrolling setup*/

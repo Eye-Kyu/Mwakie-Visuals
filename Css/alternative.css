@@ -8,7 +8,8 @@ body{
     display: grid;
     place-items: center;
     /*background-color: var(--whiteout);*/
-    height: 196vh;
+    height: 186vh;
+    position: relative;
 }
 .hero_title {
     text-align: center;
