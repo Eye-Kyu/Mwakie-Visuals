@@ -12,28 +12,130 @@
 <body>
     <div class="cursor"></div>
 
+
+
+    <nav>
+
+        <div class="toggle-btn">
+            <button class="burger"
+            onclick="this.classList.toggle('active');"></button>
+        </div> 
+    
+        <div class="mwakie-logo">
+            <a href="index.html"><img src="/Images/Centre-logo.png" alt="MWAKIE VISUALS" width="70px" height="30px"> </a>
+        </div>
+    
+        <div class="booker">
+            <a href="Contact.html"><button class="book-shoot">Book</button></a>
+        </div> 
+    
+        <div class="nav-bg"></div>
+    
+    </nav>
+    
+    <div class="overlay">
+        <div class="overlay-menu">
+            <div class="menu">
+    
+    
+    
+        <div class="primary-menu">
+            <div class="menu-container">
+                <div class="wrapper">
+        
+                    <div class="menu-item">
+                       <p id="active"><a href="index.html"><span>I</span>Home</a></p> 
+                        <div class="menu-item-revealer"></div>
+                        </div>
+        
+                        <div class="menu-item">
+                           <p><a href="About.html"><span>II</span>About</a> </p> 
+                            <div class="menu-item-revealer"></div>
+                         </div>
+        
+                            <div class="menu-item">
+                               <p><a href="galleryfilter.html"><span>III</span>Gallery</a> </p> 
+                                <div class="menu-item-revealer"></div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="secondary-menu">
+            <div class="menu-container">
+                <div class="wrapper">
+        
+                    <div class="menu-item">
+                       <p><a href="#">Collaborations</a> </p> 
+                        <div class="menu-item-revealer"></div>
+                    </div>
+        
+                    <div class="menu-item">
+                       <p> <a href="#">Featured Works</a> </p>
+                        <div class="menu-item-revealer"></div>
+                    </div>
+        
+        
+                    <div class="menu-item">
+                       <p> <a href="Contact.html"> Book A Session</a> </p>
+                        <div class="menu-item-revealer"></div>
+                    </div>
+        
+                </div>
+        
+                    <div class="wrapper">
+                        <div class="menu-item">
+                            <p><a href="#">Credits</a> </p>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            </div>
+        
+    
+            
+        </div>
+    </div>
+    
+        
+        
+    
     <section class="contact">
 
         
 <div class="questionnaire">
     <p>Mwangi Kirungo Questionnaire</p>
     <div class="form">
-        <form action="">
+        <form action="https://formsubmit.co/wankenobi29@gmail.com" method="POST">
             <label class="pekee" for="Fname">Name*</label>
             <input
             type="text"
             id="fname"
             name="fname"
             placeholder="first + surname"
+            required
+            />
+            <br/>  <br/>
+
+            <label class="pekee" for="Fname">Email*</label>
+            <input
+            type="email"
+            id="Email"
+            name="email"
+            placeholder="Email Address" 
+            required
             />
             <br/>  <br/>
 
             <label class="pekee" for="Location">Location*</label>
             <input
-            type="text"
+            type="text" 
             id="location"
             name="location"
             placeholder="e.g Thika"
+            required
             />
             <br/> <br/>
 
@@ -60,21 +162,21 @@
 
                 <div class="job-items">
                     <div class="occasion">
-                        <input type="checkbox">
+                        <input type="checkbox" name="Weddings">
                         <label for="">Weddings</label>
                     </div>
                 </div>
 
                 <div class="job-items">
                     <div class="occasion">
-                        <input type="checkbox">
+                        <input type="checkbox" name="Graduations">
                         <label for="">Graduations</label>
                     </div>
                 </div>
 
                 <div class="job-items">
                     <div class="occasion">
-                        <input type="checkbox">
+                        <input type="checkbox" name="Baby-Showers">
                         <label for="">Baby-Showers</label>
                     </div>
                 </div>
@@ -87,20 +189,20 @@
                 </div>
                 <div class="job-items">
                     <div class="occasion">
-                        <input type="checkbox">
+                        <input type="checkbox" name="studio">
                         <label for="">Studio sessions</label>
                     </div>
                 </div>
                 <div class="job-items">
                     <div class="occasion">
-                        <input type="checkbox">
+                        <input type="checkbox" name="Outdoor">
                         <label for="">Outdoor sessions</label>
                     </div>
                 </div>
 
             </div>
 
-            <button>Book Session</button>
+            <button type="submit">Book Session</button>
         </form>
     </div>
 </div>
@@ -112,9 +214,9 @@
     <p>To be considered for a session by Mwakie Visuals, please fill out your details opposite this section. Each application will be carefully reviewed and a response communicated  within 48 hours.</p>
 
 <div class="socials">
-    <a href="#" data-img="Images/instagram-icon.png" data-fx="1">[Instagram]</a>
-    <a href="#" data-img="Images/x.jpeg" data-fx="2">[Pixieset]</a>
-    <a href="#" data-img="Images/Linkedin.jpg" data-fx="3">[Pinterest]</a>
+    <a id="hov1" href="#" data-img="Images/instagram-icon.png" data-fx="1">[Instagram]</a>
+    <a id="hov2" href="#" data-img="Images/x.jpeg" data-fx="2">[Pixieset]</a>
+    <a id="hov3" href="#" data-img="Images/Linkedin.jpg" data-fx="3">[Pinterest]</a>
 </div>
 
 </div>
@@ -124,10 +226,11 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    
+    <script src="/gsap/gsap.min.js"></script>
+    <script src="/gsap/ScrollTrigger.min.js"></script>
+    <script src="/gsap/CSSRulePlugin.min.js"></script>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script> 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/javascript/gsap.js"></script>
     <script src="/javascript/Parallax.js"></script>
 </body>

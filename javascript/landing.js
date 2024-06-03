@@ -1,3 +1,4 @@
+
 /*
 const lenis = new Lenis()
 
@@ -12,8 +13,27 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
+
+
 */
+
+/*
 gsap.registerPlugin(ScrollTrigger);
+
+const fuuta = document.querySelector(".follow-text");
+console.log(fuuta.offsetWidth)
+
+function getScrollAmount() {
+    let fuutaWidth = fuuta.scrollWidth;
+    return -(fuutaWidth - window.innerWidth);
+}
+
+const tween1 = gsap.to(fuuta, {
+    x: getScrollAmount,
+    duration: 2,
+    ease: "none",
+});
+
 
 const tlo = gsap.timeline({delay:0});
 
@@ -77,20 +97,23 @@ tlo.to(".icon ion-icon, .icon-2 ion-icon", {
     ease: "power3.out"
 }, "-=1");
 
+*/
+const tlo = gsap.timeline({delay:0});
+
 tlo.to(".insight", {
        scale: 1.2,
        x: -80,
         scrollTrigger: {
             trigger: '.contente',
-            start: 'top 50%',
-            end: "+=400",
+            start: 'top 60%',
+            end: "+=700",
             scrub: 1,
             duration: {min: 0.2, max: 3},
             ease: "power1.inOut"
         }
     }, 0);
 
-
+/*
 
     gsap.set('.fullwidth-image_text', {
         y: 32,
@@ -99,8 +122,16 @@ tlo.to(".insight", {
     gsap.set('.fullwidth-image img', {
         scale: 1.3
     })
+    */
+    /*
+    gsap.set('.follow-text', {
+        x:2,
+        scale: 1.4
+    })
 
-    
+    */
+
+     /*
        
         const tli = gsap.timeline({
             scrollTrigger: {
@@ -112,6 +143,7 @@ tlo.to(".insight", {
             }
         });
 
+       
         tli.to('.fullwidth-image_overlay', {
             opacity: 0.6
         }).to('.fullwidth-image', {
@@ -121,6 +153,59 @@ tlo.to(".insight", {
         }, 0).to('.fullwidth-image_text', {
             y: 0,
             opacity: 1
-        }, 0)
+        }, 0).
+         */
+     
 
 
+        gsap.set(".letters", {
+            fontSize: '7em',
+            color: '#000'
+        })
+        gsap.set(".zunguka", {
+            transform: 'rotate(40deg)'
+        },"-=1")
+        gsap.set(".fullwidth-image_text", {
+            opacity: 0
+        })
+        gsap.set(".follow", {
+           opacity: 1
+          
+        })
+        
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.collabos',
+                start: 'top 0%',
+                end: '+=300',
+                toggleActions: "play reverse reverse play",
+                scrub: 1,
+                pin: true,
+                ease: "power4.inOut",
+                duration: {min: 0.2, max: 4}
+            }
+        })
+        
+        tl.to(".letters", {
+            fontSize: '11.6em',
+            color: '#fff'
+        },'<')
+        .to(".zunguka", {
+            transform: 'rotate(0deg)',
+            width: '100vw',
+            height: '100vh'
+        }, '<')
+        .to(".fullwidth-image_text", {
+            opacity: 1
+        },'-=.4')
+       
+        gsap.to(".follow", {
+            opacity: 1,
+            duration: 2
+        })
+        
+       
+        
+        
+        
+        

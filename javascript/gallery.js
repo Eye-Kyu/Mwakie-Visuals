@@ -1,6 +1,6 @@
 const items = [
-    {title:"keep smiling smiles", tag: ["Monochrome"], img:"/Images/mwangi_kirungoh_1710512906894.jpeg"},
-    {title:"keep smiling smiles", tag: ["Graduations"], img:"/Images/graduate.jpg"},
+    {title:"*keep smiling smiles*", tag: ["Monochrome"], img:"/Images/mwangi_kirungoh_1710512906894.jpeg"},
+    {title:"*keep smiling smiles*", tag: ["Graduations"], img:"/Images/graduate.jpg"},
     {title:"keep smiling smiles", tag: ["Baby-Showers"], img:"/Images/mbucha.jpg"},
     {title:"keep smiling smiles", tag: ["Mixin"], img:"/Images/viuu.jpg"},
     {title:"keep smiling smiles", tag: ["Weddings"], img:"/Images/wedding.jpg"},
@@ -11,5 +11,5 @@ const items = [
     {title:"keep smiling smiles", tag: ["Mixin"], img:"/Images/viuu.jpg"},
     {title:"keep smiling smiles", tag: ["Graduations"], img:"/Images/graduation.jpg"},
     {title:"keep smiling smiles", tag: ["Weddings"], img:"/Images/mbucha.JPG"},
-    {title:"keep smiling smiles", tag: ["Portraits"], img:"/Images/Kendrick Lamar.jpg"},
+    //{title:"keep smiling smiles", tag: ["Portraits"], img:"/Images/Kendrick Lamar.jpg"},
 ];
