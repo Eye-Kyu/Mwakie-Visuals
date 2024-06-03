@@ -55,31 +55,31 @@ gsap.set(".second-text", {
     opacity: 0,
 })
 gsap.set(".about-image", {
-   opacity: 0.7
+   opacity: 0
 })
 let tl = gsap.timeline({delay:0});
 
 tl.to(".about", {
     opacity: 1,
     y: 20,
-    duration: 5,
+    duration: 2,
     ease: "power4.inOut"
 }, 0);
 tl.to(".first-text", {
     x: 40,
     opacity:1,
-    duration: 4,
+    duration: 2,
     ease: "power4.inOut"
 }, 0);
 tl.to(".second-text", {
     opacity:1,
     x: 7,
-    duration: 4,
+    duration: 3,
     ease: "power4.inOut"
 }, 0);
 tl.to(".about-image", {
     opacity: 1,
-    duration: 4,
-    ease: "power6.in"
+    duration: 3,
+    ease: "power2.inOut"
 }, 0);
 

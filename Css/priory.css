@@ -9,6 +9,7 @@
     --bg: #e5e3dc;
     --link-color: #e2e2dc;
     --overlay-bg: #0a0a0a;
+    --obsidianblack: #0b1215;
   
 }
 @font-face {
@@ -108,181 +109,138 @@ html, body{
   pointer-events: none;
   transition: transform .1s;
 }
-.cursor{
-  background: black;
-  z-index: 999;
-  top: 0;
-  width: 10px;
-  height: 10px;
-  display: none;
-}
-/*
-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 9099;
-}
-path{
-  fill: none;
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-nav {
-  display: flex;
-  z-index: 5;
-}
-.main-nav ul{
-  display: flex;
-  flex-direction: row;
-  height: 10vh;
-  width: 100vw;
-  z-index: 6;
-}
-.main-nav ul li {
-  z-index: 7;
-}
-.logo1 {
-  display: flex;
- justify-self: flex-start;
-}
 
-*/
-/*navi gation*/
+
 nav {
-  background-color: #70707086;/* rgb(243, 237, 237); */
-  z-index: 2;
   position: relative;
+  width: 100vw;
+  height: 10vh;
   display: flex;
   flex-direction: row;
-  width: 100vw;
-  height: 8vh;
   justify-content: space-between;
-  border: none;
-  
-
+  align-items: center;
+  padding: .1em 2em;
+  background-color: transparent;
 }
+nav > div {
+  flex: 1;
+}
+.nav-bg {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+
+z-index: -1;
+}
+
 .mwakie-logo{
-  padding:.1em 3em 0em 1em;
   display: flex;
-  width: 20vw;
-  height: 10vh;
-  cursor: pointer;
-  mix-blend-mode: difference;
+  width: 3vw;
+  height: 11vh;
+  
 }
 .mwakie-logo img {
   height: 100%;
+  width: 190px;
+  cursor: pointer;
+  box-shadow: none;
+}
+.toggle-btn {
+  display: flex;
 }
 .booker {
-  position: relative;
-  right: 2em;
-  padding-top: 1rem;
+  position: absolute;
+  right: 1em;
+  padding-top: .5rem;
 }
 .book-shoot{
   text-transform: uppercase;
-  padding: .4em 2em .4em 2em;
+  padding: .6em 2em .6em 2em;
   background: inherit;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 7%;
+  border: 1px solid var(--overlay-bg);
+  border-radius: 1%;
+  cursor: pointer;
 }
-.navi {
-  mix-blend-mode: difference;
-}
-.overlay {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-}
-svg path {
-  fill: var(--overlay-bg);
-}
-#toggle-btn {
-  position: relative;
-  top: 0;
-  right: 0;
-  width: 80px;
-  height: 50px;
+.burger {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1em;
-  margin-top: 0;
+  padding: 1.7em 2em 1.5em 2em;
+  outline: none;
+  border: none;
+  width: 28px;
+  height: 20px;
+  transition: all 350ms ease-out;
   cursor: pointer;
+  background: transparent;
 }
-.btn-outline {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border: 1px solid var(--overlay-bg);
-}
-.btn-outline-1 {
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  animation: morph 6s linear infinite;
-}
-.btn-outline-2 {
-  border-radius: 53% 47% 43% 57% / 51% 39% 61% 49%;
-}
-@keyframes morph {
-  0% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-  50% {
-      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-  }
-  100% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-}
-#hamburger {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  z-index: 7;
-}
-#hamburger span {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: inline-block;
-  width: 24px;
-  height: 1.25px;
-  background: var(--overlay-bg);
-  transition: transform 0.25s;
-}
-#hamburger span::before {
-  position: absolute;
-  right: 0;
-  display: inline-block;
+.burger::before,
+.burger::after {
   content: "";
-  width: 18px;
-  height: 1.25px;
-  background: var(--overlay-bg);
-  transform: translateY(-4px);
-  transition: transform 0.15s;
-  mix-blend-mode: difference;
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  background: var(--call2Action);
+  transition: all 350ms ease-out;
+  will-change: transform;
+  z-index: 99;
 }
-#hamburger .active span {
-  transform: rotate(45deg);
+.burger::before {
+  transform: translateY(-3px);
 }
-#hamburger .active span::before {
-  top: unset;
-  width: 24px;
-  transform: rotate(-90deg);
+.burger::after {
+  transform: translateY(3px);
 }
+.active.burger::before {
+  transform: translateY(0) rotate(45deg);
+  width: 50px;
+  height: 4px;
+}
+.active.burger::after {
+  transform: translateY(0) rotate(-45deg);
+  width: 50px;
+  height: 4px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: var(--obsidianblack);
+  clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+  z-index: 3;
+  overflow: hidden;
+
+}
+.overlay-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    gap: .5em;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    z-index: 2;
+}
+
+
 .menu {
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
   mix-blend-mode: difference;
-  z-index: 4;
+  z-index: 5;
+  overflow: hidden;
 }
 .menu > div {
   height: 100%;
@@ -290,14 +248,16 @@ svg path {
 }
 .menu a {
   position: relative;
-  top: 120px;
+  top: 20px;
   line-height: 70%;
   text-decoration: none;
-  color: var(--link-color);
-  transition: letter-spacing 0.3s;
+  color: var(--call2Action);
+  transition: letter-spacing 0.4s ease-in;
+  transition: color 0.5s ease-in-out;
 }
 .menu a:hover {
   letter-spacing: 0.085rem;
+  color: #f7e094;
 }
 .menu a span {
   font-size: 20px;
@@ -314,6 +274,8 @@ svg path {
   width: 120%;
   height: 200%;
  /* background: var(--overlay-bg);*/
+ 
+
   margin: 0 auto;
 }
 .menu-container {
@@ -341,6 +303,7 @@ svg path {
   text-transform: uppercase;
   font-size: 120px;
   font-weight: 500;
+  padding-left: .1em;
 }
 .secondary-menu {
   flex: 2;
@@ -358,7 +321,10 @@ svg path {
   flex-direction: column;
   gap: 30px;
 }
-.secondary-menu .menu-container .wrapper:nth-child(1) a,
-.secondary-menu .menu-container .wrapper:nth-child(3) a {
-  margin-left: 1em;
+.secondary-menu .menu-container .wrapper .menu-item:nth-child(1) ,
+.secondary-menu .menu-container .wrapper .menu-item:nth-child(3)  {
+  margin-left: 4em;
 } 
+.secondary-menu .menu-container .wrapper .menu-item:nth-child(2) {
+  margin-right: 3em;
+}

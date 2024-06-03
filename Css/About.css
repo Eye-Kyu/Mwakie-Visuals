@@ -1,8 +1,9 @@
+
 .kanosta{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: var(--touchupcolour);
+    background-color: var(--secondarycolour);
 }
 .about{
     display: grid;
@@ -15,13 +16,15 @@
 }
 .about p{
     font-size: 16em;
-    font-stretch: extra-expanded;
-    letter-spacing: .5em;
-    font-weight: lighter;
+    font-stretch: condensed;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    font-weight: 700;
+    line-height: 130%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
+    width: 80%;
     margin: 0;
-    color: var(--accentcolour);
+    color: #7070707c;
 }
 .texts{
     display: grid;
@@ -33,6 +36,8 @@
 }
 .texts p{
     line-height: 1.4rem;
+    color: var(--black);
+    font-size: .9em;
 }
 .first-text{
     height: 70vh;
@@ -57,10 +62,10 @@
 }
 
 .about-image{
-    z-index: 3;
+    z-index: 1;
     width: 18rem;
 }
 .about-image img{
     height: 26rem;
-    box-shadow: 1px 2px 2px 2px rgb(74, 67, 67);
+    box-shadow: 1px 2px 2px 2px rgba(74, 67, 67, 0.404);
 }

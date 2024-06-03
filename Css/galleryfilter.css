@@ -46,9 +46,9 @@ img {
  .filter h1 span{
     position: relative;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 22px;
     color: #000;
-    line-height: 80%;
+    line-height: 50%;
     transition: color 0.3s;
  }
  .filter.active h1 span{

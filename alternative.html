@@ -13,17 +13,26 @@
     <div class="cursor"></div>
 
 
-    
+     <!--
     <nav>
 
         <div class="nav-1">
             <div class="pop-menu">
-                <div class="btn" id="toggle-btn">
+            -->
+                <!--
+                <div class="btn" id="toggle-btn" onclick="this.classList.toggle('active');">
                     <div class="btn-outline btn-outline-1"></div>
                     <div class="btn-outline btn-outline-2"></div>
                     <div id="hamburger">
                         <span></span>
                 </div>
+            -->
+        <!--
+            <div class="toggle-btn">
+                <button class="burger"
+                onclick="this.classList.toggle('active');"></button>
+            </div>
+            <div class="nav-bg"></div>
             </div>
         </div>
         </div>
@@ -37,14 +46,12 @@
         </div> 
 
 </nav>
+-->
 
-
-<section class="ova">
+<!--
 <div class="overlay">
-    <svg viewbox="0 0 1000 1000">
-        <path d="M0 2S175 1 500 1s500 1 500 1V0H0Z"></path>
-    </svg>
-</div>
+<div class="overlay-menu">
+   
 
 <div class="menu">
 
@@ -102,8 +109,96 @@
         </div>
     </div>
 
-</section>
+</div>
+</div>
 
+-->
+
+
+<nav>
+
+    <div class="toggle-btn">
+        <button class="burger"
+        onclick="this.classList.toggle('active');"></button>
+    </div> 
+
+    <div class="mwakie-logo">
+        <img src="/Images/Centre-logo.png" alt="MWAKIE VISUALS" width="70px" height="30px">
+    </div>
+
+    <div class="booker">
+        <a href="Contact.html"> <button class="book-shoot">Book</button></a>
+    </div> 
+
+    <div class="nav-bg"></div>
+
+</nav>
+
+<div class="overlay">
+    <div class="overlay-menu">
+        <div class="menu">
+
+
+
+    <div class="primary-menu">
+        <div class="menu-container">
+            <div class="wrapper">
+    
+                <div class="menu-item">
+                   <p id="active"><a href="#"><span>I</span>Home</a></p> 
+                    <div class="menu-item-revealer"></div>
+                    </div>
+    
+                    <div class="menu-item">
+                       <p><a href="About.html"><span>II</span>About</a> </p> 
+                        <div class="menu-item-revealer"></div>
+                     </div>
+    
+                        <div class="menu-item">
+                           <p><a href="galleryfilter.html"><span>III</span>Gallery</a> </p> 
+                            <div class="menu-item-revealer"></div>
+                        </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="secondary-menu">
+        <div class="menu-container">
+            <div class="wrapper">
+    
+                <div class="menu-item">
+                   <p><a href="#">Collaborations</a> </p> 
+                    <div class="menu-item-revealer"></div>
+                </div>
+    
+                <div class="menu-item">
+                   <p> <a href="#">Featured Works</a> </p>
+                    <div class="menu-item-revealer"></div>
+                </div>
+    
+    
+                <div class="menu-item">
+                   <p> <a href="Contact.html"> Book A Session</a> </p>
+                    <div class="menu-item-revealer"></div>
+                </div>
+    
+            </div>
+    
+                <div class="wrapper">
+                    <div class="menu-item">
+                        <p><a href="#">Credits</a> </p>
+                        <div class="menu-item-revealer"></div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        </div>
+    
+
+        
+    </div>
+</div>
 
     <section class="move_righter">
 
@@ -206,6 +301,48 @@
     </p>
     </section>
 
+    <section class="collabos">
+        <div class="collabs-header">
+            <div class="letters">
+                <div>c</div>
+                <div>o</div>
+                <div>l</div>
+                <div>l</div>
+                <div>a</div>
+                <div>b</div>
+            </div>
+            <div class="letters">
+                <div>o</div>
+                <div>r</div>
+                <div>a</div>
+                <div>t</div>
+                <div>i</div>
+                <div>o</div>
+                <div>n</div>
+                <div>s</div>
+            </div>
+        </div>
+
+            <div class="collabs-content">
+                <div class="img-holder">
+                    <img class="zunguka"  src="/Images/mwangi_kirungoh_1710512906894.jpeg" alt="collaborations">
+                    <div class="fullwidth-image_text">
+                        <h2>SELECTED WORK</h2>
+                        <p>Our new collection is everyhing you need for your next adventure
+                            Made to be flexible, breathtaking and long lasting.
+                        </p>
+                        <button class="collabs"><a href="#">
+                            pieces
+                        </a></button>
+                    </div>
+                </div>
+                
+            </div>
+
+    </section>
+
+<!--
+
     <section class="fullwidth-image">
         <div class="fullwidth-image_overlay"></div>
         <div class="fullwidth-image_text">
@@ -219,6 +356,8 @@
         </div>
         <img src="/Images/Landimbisha.jpg"/>
     </section>
+        
+-->
 
     <footer class="follow">
         <div class="follow-text">
@@ -230,7 +369,9 @@
                 <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>
         </div>
+        <p>Developed by Eye-Kyu</p>
     </footer>
+
 
 
 
