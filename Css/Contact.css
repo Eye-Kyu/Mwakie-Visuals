@@ -2,6 +2,9 @@ body{
     background-color: var(--obsidianblack) ;
 
 }
+.booker {
+    display: none;
+}
 .contact{
    display: flex;
    overflow-x: hidden;

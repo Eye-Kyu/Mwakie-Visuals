@@ -202,7 +202,7 @@ class App {
         }, 0.6).to(".hero_title span", {
             y: 10,
             opacity: 1,
-            ease: "expo.out",
+            ease: "power4.out",
             duration: 2,
             stagger: 0.02
         }).to(".hero_images img", {
