@@ -35,11 +35,11 @@ body{
 }
 .hero img {
     position: absolute;
+    transition: 2s ease-in-out;
    
 }
 .hero img:hover {
     mix-blend-mode: difference;
-    transition:all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .hero img:nth-child(1) {
     width: 10.4rem;
@@ -141,10 +141,11 @@ h1 span{
 .marquee {
     position: relative;
     margin-top: 1.6em;
-   border: 1.5px dotted rgb(0, 0, 0);
+    border: 1.5px dotted rgb(0, 0, 0);
     color: #000000;
     padding: 1.5em 0;
-    font-weight: 600;
+    font-weight: 100;
+    line-height: 80%;
     font-size: 2em;
     text-transform: uppercase;
     overflow: hidden;

@@ -96,13 +96,3 @@ filters.forEach((filter) => {
 
 });
 
-/*
-const tl3 = gsap.timeline({
-    tl3.to(".item-img", {
-        opacity: 1,
-        y: 20,
-        duration: 1,
-        ease: "power4.inOut"
-    }, 0);
-})
-*/

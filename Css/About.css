@@ -21,10 +21,11 @@
     letter-spacing: .4em;
     font-weight: 700;
     line-height: 130%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 80%;
     margin: 0;
-    color: #7070707c;
+    color: #5257377c;
 }
 .texts{
     display: grid;

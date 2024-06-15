@@ -1,103 +1,4 @@
 
-/*
-const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
-
-
-
-*/
-
-/*
-gsap.registerPlugin(ScrollTrigger);
-
-const fuuta = document.querySelector(".follow-text");
-console.log(fuuta.offsetWidth)
-
-function getScrollAmount() {
-    let fuutaWidth = fuuta.scrollWidth;
-    return -(fuutaWidth - window.innerWidth);
-}
-
-const tween1 = gsap.to(fuuta, {
-    x: getScrollAmount,
-    duration: 2,
-    ease: "none",
-});
-
-
-const tlo = gsap.timeline({delay:0});
-
-tlo.to(".col", {
-    top: 0,
-    duration: 3,
-    ease: "power4.inOut"
-});
-
-tlo.to(".c-1 .item", {
-    top: 0,
-    stagger: 0.25,
-    duration: 3,
-    ease: "power4.inOut"
-}, "-=2");
-
-tlo.to(".c-2 .item", {
-    top: 0,
-    stagger: 0.25,
-    duration: 3,
-    ease: "power4.inOut"
-}, "-=4");
-
-tlo.to(".c-3 .item", {
-    top: 0,
-    stagger: 0.25,
-    duration: 3,
-    ease: "power4.inOut"
-}, "-=4");
-
-tlo.to(".c-4 .item", {
-    top: 0,
-    stagger: -0.25,
-    duration: 3,
-    ease: "power4.inOut"
-}, "-=4");
-
-tlo.to(".c-5 .item", {
-    top: 0,
-    stagger: 0.25,
-    duration: 3,
-    ease: "power4.inOut"
-}, "-=4");
-
-tlo.to(".container", {
-    scale: 6,
-    duration: 4,
-    ease: "power4.inOut"
-},"-=2");
-
-tlo.to(".nav-item a, .title p, .slide-num p, .preview img", {
-    top: 0,
-    stagger: 0.075,
-    duration: 1,
-    ease: "power3.out"
-}, "-=1.5");
-
-tlo.to(".icon ion-icon, .icon-2 ion-icon", {
-    scale: 1,
-    stagger: 0.05,
-    ease: "power3.out"
-}, "-=1");
-
-*/
 const tlo = gsap.timeline({delay:0});
 
 tlo.to(".insight", {
@@ -182,7 +83,7 @@ tlo.to(".insight", {
                 scrub: 1,
                 pin: true,
                 ease: "power4.inOut",
-                duration: {min: 0.2, max: 4}
+                duration: {min: 0.2, max: 5}
             }
         })
         

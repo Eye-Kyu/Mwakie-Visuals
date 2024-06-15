@@ -1,19 +1,51 @@
+/*import {gsap} from "./gsap/gsap.min.js";
 /**Event Listener for mouseMove Event
  * Gets the current mouse position and on mouseMove event, updates the cursor position
  */
-gsap.set('.cursor',{xPercent:-50, yPercent:-50})
 
-let cursor = document.querySelector('.cursor')
+gsap.set('.cursor',{xPercent:-50, yPercent:-50});
+
+const links = document.querySelectorAll('button');
+const cursor = document.querySelector('.cursor');
+const linksnum = links.length;
 
 let mouseX;
 let mouseY;
+let i = 0;
+
+const grow = () => {
+    if (i < linksnum) {
+        cursor.classList.toggle('grow')
+    }
+    else {
+        console.log("this is not a link!!!");
+    }
+
+}; 
+      //Add mouseevent listener to each link
+      links.forEach(link => {
+        link.addEventListener('mouseenter', event => grow());
+        link.addEventListener('mouseleave', event => cursor.classList.toggle('grow'));
+
+    });
+    
+    
+
+
 
 window.addEventListener('mousemove', e => {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
+     mouseX = e.clientX;
+     mouseY = e.clientY;
 
-    gsap.to(cursor, 2, {x: mouseX, y: mouseY})
+    console.log(mouseX, mouseY);
+
+    gsap.to(cursor, {x: mouseX, y: mouseY})
 });
+
+
+ 
+
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -144,8 +176,8 @@ class App {
 
             tl.to(image, {
                 ease: "none",
-                yPercent: gsap.utils.random(-60, -120) + (index * 10), // Adjust parallax effect based on index
-                duration: 1 // Duration of the parallax effect
+                yPercent: gsap.utils.random(-50, -100) + (index * 12), // Adjust parallax effect based on index
+                duration: .4 // Duration of the parallax effect
             }, 0);
         });
     }
