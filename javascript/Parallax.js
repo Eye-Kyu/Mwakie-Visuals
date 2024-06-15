@@ -1,4 +1,4 @@
-
+/*
 const trails = document.querySelectorAll(".trail");
 const smoothPointer = {
     x: window.innerWidth/2,
@@ -37,6 +37,7 @@ function updatePath() {
 }
 
 updatePath();
+*/
 
 
 gsap.registerPlugin(ScrollTrigger);

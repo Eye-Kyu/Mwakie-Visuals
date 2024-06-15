@@ -1,13 +1,16 @@
-gsap.set(".cursor",{xPercent:-50, yPercent:-50})
+/**Event Listener for mouseMove Event
+ * Gets the current mouse position and on mouseMove event, updates the cursor position
+ */
+gsap.set('.cursor',{xPercent:-50, yPercent:-50})
 
-let cursor = document.querySelector(".cursor")
+let cursor = document.querySelector('.cursor')
 
 let mouseX;
 let mouseY;
 
 window.addEventListener('mousemove', e => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
 
     gsap.to(cursor, 2, {x: mouseX, y: mouseY})
 });
@@ -147,12 +150,6 @@ class App {
         });
     }
 
-    /*
-    _render(time) {
-        this.lenis.raf(time);
-        requestAnimationFrame(this._render.bind(this)); // Keep the rendering loop going
-    }
-    */
 }
 
 // Instantiate the App class
