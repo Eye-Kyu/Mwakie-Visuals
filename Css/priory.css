@@ -30,10 +30,6 @@ html,body{
   overscroll-behavior: none;
   min-height: 100%;
   font-family: 'Poppins', sans-serif;
-<<<<<<< HEAD
-  cursor: none;
-=======
->>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
 }
 @media only screen and (max-width: 900px) {
     body{
@@ -120,43 +116,6 @@ a {
   mix-blend-mode: difference;
   border-radius: 50%;
   pointer-events: none;
-<<<<<<< HEAD
-  background-color: #ffffff;
-  z-index: 120;
-  
-}
-
-.cursor.grow {
-  width: 50px;
-  height: 50px;
-  transition:all 200ms ease-in;
-}
-
-nav {
-  position: relative;
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: .1em 2em;
-  background-color: transparent;
-}
-nav > div {
-  flex: 1;
-}
-.nav-bg {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-
-z-index: -1;
-}
-
-=======
   transition: transform .1s;
 }
 
@@ -185,7 +144,6 @@ height: 100%;
 z-index: -1;
 }
 
->>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
 .mwakie-logo{
   display: flex;
   width: 3vw;
@@ -202,8 +160,6 @@ z-index: -1;
   display: flex;
 }
 .booker {
-<<<<<<< HEAD
-=======
   position: absolute;
   right: 1em;
   padding-top: .5rem;
@@ -257,7 +213,6 @@ z-index: -1;
   height: 4px;
 }
 .overlay {
->>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
   position: absolute;
   right: 1em;
   padding-top: .5rem;
@@ -319,11 +274,7 @@ z-index: -1;
   background: var(--obsidianblack);
   clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
   z-index: 3;
-<<<<<<< HEAD
-  overflow-y: hidden;
-=======
   overflow: hidden;
->>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
 
 }
 .overlay-menu {
@@ -337,11 +288,7 @@ z-index: -1;
     gap: .5em;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-    overflow-y:hidden;
-=======
     overflow:hidden;
->>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
     z-index: 2;
 }
 
