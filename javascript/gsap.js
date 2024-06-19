@@ -1,4 +1,6 @@
-import {gsap} from "./gsap/gsap.min.js";
+
+import { gsap, ScrollTrigger, CSSRulePlugin } from "gsap/all";
+import Lenis from 'lenis';
 /**Event Listener for mouseMove Event
  * Gets the current mouse position and on mouseMove event, updates the cursor position
  */
