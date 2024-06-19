@@ -8,7 +8,11 @@ body{
     display: grid;
     place-items: center;
     /*background-color: var(--whiteout);*/
+<<<<<<< HEAD
     height: 166vh;
+=======
+    height: 186vh;
+>>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
     position: relative;
 }
 .hero_title {
@@ -42,8 +46,13 @@ body{
     mix-blend-mode: difference;
 }
 .hero img:nth-child(1) {
+<<<<<<< HEAD
     width: 10.4rem;
     height: 17.1rem;
+=======
+    width: 20.4rem;
+    height: 27.1rem;
+>>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
     top: 0;
     left: 4rem;
 }
@@ -60,14 +69,24 @@ body{
     right: 0rem;
 }
 .hero img:nth-child(4) {
+<<<<<<< HEAD
     width: 11.4rem;
     height: 23.1rem;
+=======
+    width: 21.4rem;
+    height: 33.1rem;
+>>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
     top: 18rem;
     right: 38rem;
 }
 .hero img:nth-child(5) {
+<<<<<<< HEAD
     width: 22rem;
     height: 10rem;
+=======
+    width: 32rem;
+    height: 18rem;
+>>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
     top: 21rem;
     right: 0.7rem;
 }
@@ -128,6 +147,50 @@ body{
     right: 32rem;
 
 }
+
+.hero img:nth-child(8) {
+    width: 20.4rem;
+    height: 33.1rem;
+    top: 46rem;
+    right: 0rem;
+}
+.hero img:nth-child(9) {
+    width: 17.4rem;
+    height: 12.1rem;
+    top: 42rem;
+    left: 6rem;
+}
+.hero img:nth-child(10) {
+    width:41.4rem;
+    height: 23.1rem;
+    top: 54rem;
+    left: 0rem;
+}
+.hero img:nth-child(11) {
+    width: 18.4rem;
+    height: 16.1rem;
+    top: 51rem;
+    right: 23rem;
+}
+.hero img:nth-child(12) {
+    width: 22.4rem;
+    height: 18rem;
+    top: 21rem;
+    right: 0;
+}
+.hero img:nth-child(13) {
+    width: 15.4rem;
+    height: 13.1rem;
+    top: 28rem;
+    left: 0rem;
+}
+.hero img:nth-child(14) {
+    width: 17.4rem;
+    height: 12.6rem;
+    top: 1rem;
+    right: 32rem;
+
+}
 h1 span{
     font-size: 6em;
     font-weight: 400;
@@ -141,11 +204,23 @@ h1 span{
 .marquee {
     position: relative;
     margin-top: 1.6em;
+<<<<<<< HEAD
     border: 1.5px dotted rgb(0, 0, 0);
     color: #000000;
     padding: 1.5em 0;
     font-weight: 100;
     line-height: 80%;
+=======
+   /* background: linear-gradient(to right, #363636, #111111); */
+   border: 1.5px dotted rgb(0, 0, 0);
+    color: #000000;
+    padding: 1.5em 0;
+    font-weight: 600;
+    /*
+    font-style: italic;
+    font-family: cursive;
+    */
+>>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
     font-size: 2em;
     text-transform: uppercase;
     overflow: hidden;
@@ -292,6 +367,51 @@ h1 span{
     color: var(--whiteout);
 }
 
+<<<<<<< HEAD
+=======
+
+/*
+.fullwidth-image {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    clip-path: polygon(5% 10%, 95% 10%, 95% 90%, 5% 90%);
+}
+.fullwidth-image img {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.fullwidth-image_overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-color: black;
+    opacity: 0;
+}
+.fullwidth-image_text {
+    position: absolute;
+    z-index: 15;
+    top: 60%;
+    left: 30%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+.fullwidth-image_text h2{
+    font-size: 2em;
+}
+.fullwidth-image_text p {
+    font-size: 1em;
+    font-family: basis;
+}
+*/
+>>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
 .follow {
     width: 100vw;
     height: 50vh;

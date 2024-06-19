@@ -21,11 +21,18 @@
     letter-spacing: .4em;
     font-weight: 700;
     line-height: 130%;
+<<<<<<< HEAD
     font-style: italic;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 80%;
     margin: 0;
     color: #5257377c;
+=======
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+    margin: 0;
+    color: #7070707c;
+>>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
 }
 .texts{
     display: grid;

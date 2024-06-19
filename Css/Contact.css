@@ -1,9 +1,12 @@
 body{
     background-color: var(--obsidianblack) ;
 
+<<<<<<< HEAD
 }
 .booker {
     display: none;
+=======
+>>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
 }
 .contact{
    display: flex;

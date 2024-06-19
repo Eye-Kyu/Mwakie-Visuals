@@ -11,5 +11,9 @@ const items = [
     {title:"keep smiling smiles", tag: ["Flora'n'Fauna"], img:"/Images/wildlife1zebra.jpeg"},
     {title:"keep smiling smiles", tag: ["Graduations"], img:"/Images/graduation.jpg"},
     {title:"keep smiling smiles", tag: ["Weddings"], img:"/Images/mbucha.JPG"},
+<<<<<<< HEAD
     {title:"keep smiling smiles", tag: ["Flora'n'Fauna"], img:"Images/wildlife2cat.jpeg"},
+=======
+    //{title:"keep smiling smiles", tag: ["Portraits"], img:"/Images/Kendrick Lamar.jpg"},
+>>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
 ];

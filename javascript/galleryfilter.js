@@ -96,3 +96,16 @@ filters.forEach((filter) => {
 
 });
 
+<<<<<<< HEAD
+=======
+/*
+const tl3 = gsap.timeline({
+    tl3.to(".item-img", {
+        opacity: 1,
+        y: 20,
+        duration: 1,
+        ease: "power4.inOut"
+    }, 0);
+})
+*/
+>>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e

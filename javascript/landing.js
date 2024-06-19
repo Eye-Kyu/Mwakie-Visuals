@@ -1,6 +1,111 @@
+<<<<<<< HEAD
+=======
+
+/*
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+
+
+*/
+
+/*
+gsap.registerPlugin(ScrollTrigger);
+>>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
+
+const fuuta = document.querySelector(".follow-text");
+console.log(fuuta.offsetWidth)
+
+function getScrollAmount() {
+    let fuutaWidth = fuuta.scrollWidth;
+    return -(fuutaWidth - window.innerWidth);
+}
+
+const tween1 = gsap.to(fuuta, {
+    x: getScrollAmount,
+    duration: 2,
+    ease: "none",
+});
+
 
 const tlo = gsap.timeline({delay:0});
 
+<<<<<<< HEAD
+=======
+tlo.to(".col", {
+    top: 0,
+    duration: 3,
+    ease: "power4.inOut"
+});
+
+tlo.to(".c-1 .item", {
+    top: 0,
+    stagger: 0.25,
+    duration: 3,
+    ease: "power4.inOut"
+}, "-=2");
+
+tlo.to(".c-2 .item", {
+    top: 0,
+    stagger: 0.25,
+    duration: 3,
+    ease: "power4.inOut"
+}, "-=4");
+
+tlo.to(".c-3 .item", {
+    top: 0,
+    stagger: 0.25,
+    duration: 3,
+    ease: "power4.inOut"
+}, "-=4");
+
+tlo.to(".c-4 .item", {
+    top: 0,
+    stagger: -0.25,
+    duration: 3,
+    ease: "power4.inOut"
+}, "-=4");
+
+tlo.to(".c-5 .item", {
+    top: 0,
+    stagger: 0.25,
+    duration: 3,
+    ease: "power4.inOut"
+}, "-=4");
+
+tlo.to(".container", {
+    scale: 6,
+    duration: 4,
+    ease: "power4.inOut"
+},"-=2");
+
+tlo.to(".nav-item a, .title p, .slide-num p, .preview img", {
+    top: 0,
+    stagger: 0.075,
+    duration: 1,
+    ease: "power3.out"
+}, "-=1.5");
+
+tlo.to(".icon ion-icon, .icon-2 ion-icon", {
+    scale: 1,
+    stagger: 0.05,
+    ease: "power3.out"
+}, "-=1");
+
+*/
+const tlo = gsap.timeline({delay:0});
+
+>>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
 tlo.to(".insight", {
        scale: 1.2,
        x: -80,
@@ -83,7 +188,11 @@ tlo.to(".insight", {
                 scrub: 1,
                 pin: true,
                 ease: "power4.inOut",
+<<<<<<< HEAD
                 duration: {min: 0.2, max: 5}
+=======
+                duration: {min: 0.2, max: 4}
+>>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
             }
         })
         
