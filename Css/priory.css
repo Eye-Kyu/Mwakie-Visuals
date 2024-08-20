@@ -30,6 +30,7 @@ html,body{
   overscroll-behavior: none;
   min-height: 100%;
   font-family: 'Poppins', sans-serif;
+  cursor: none;
 }
 @media only screen and (max-width: 900px) {
     body{
@@ -109,14 +110,22 @@ a {
 
 .cursor{
   position: fixed;
-  left: 10px;
-  top: 10px;
+  background: #ffffff;
+  left: 0;
+  z-index: 9999;
+  top: 0;
   width: 14px;
   height: 14px;
   mix-blend-mode: difference;
   border-radius: 50%;
   pointer-events: none;
-  transition: transform .1s;
+  transition: transform .01s ease-in-out;
+}
+
+.cursor.grow {
+  width: 50px;
+  height: 50px;
+  transition:all 5ms ease-in-out;
 }
 
 
@@ -153,7 +162,7 @@ z-index: -1;
 .mwakie-logo img {
   height: 100%;
   width: 190px;
-  cursor: pointer;
+  cursor: none;
   box-shadow: none;
 }
 .toggle-btn {
@@ -170,7 +179,7 @@ z-index: -1;
   background: inherit;
   border: 1px solid var(--overlay-bg);
   border-radius: 1%;
-  cursor: pointer;
+  cursor: none;
 }
 .burger {
   display: flex;
@@ -182,8 +191,9 @@ z-index: -1;
   width: 28px;
   height: 20px;
   transition: all 350ms ease-out;
-  cursor: pointer;
+  cursor: none;
   background: transparent;
+  z-index: 999;
 }
 .burger::before,
 .burger::after {

@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-=======
-
+/*
 const trails = document.querySelectorAll(".trail");
 const smoothPointer = {
     x: window.innerWidth/2,
@@ -39,8 +37,8 @@ function updatePath() {
 }
 
 updatePath();
->>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
 
+*/
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,27 +58,27 @@ gsap.set(".second-text", {
 gsap.set(".about-image", {
    opacity: 0
 })
-let tl = gsap.timeline({delay:0});
+let tla = gsap.timeline({delay:0});
 
-tl.to(".about", {
+tla.to(".about", {
     opacity: 1,
     y: 20,
     duration: 2,
     ease: "power4.inOut"
 }, 0);
-tl.to(".first-text", {
+tla.to(".first-text", {
     x: 40,
     opacity:1,
     duration: 2,
     ease: "power4.inOut"
 }, 0);
-tl.to(".second-text", {
+tla.to(".second-text", {
     opacity:1,
     x: 7,
     duration: 3,
     ease: "power4.inOut"
 }, 0);
-tl.to(".about-image", {
+tla.to(".about-image", {
     opacity: 1,
     duration: 3,
     ease: "power2.inOut"

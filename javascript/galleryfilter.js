@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function animateFontSize(target, fontSize) {
+    function animateFontSize(target, fontSize) { 
         const spans = target.querySelectorAll("span");
         gsap.to(spans, {
             fontSize: fontSize,
@@ -96,8 +96,7 @@ filters.forEach((filter) => {
 
 });
 
-<<<<<<< HEAD
-=======
+
 /*
 const tl3 = gsap.timeline({
     tl3.to(".item-img", {
@@ -108,4 +107,3 @@ const tl3 = gsap.timeline({
     }, 0);
 })
 */
->>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e

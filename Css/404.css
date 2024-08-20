@@ -27,19 +27,20 @@ body {
     
   }
   
-  h1 {
-    font-size: 50px;
+ .wrapper h1 {
+    font-size: 5em;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
     line-height: 1;
     font-weight: 700;
   }
   
-  .dot {
+  .wrapper.dot {
     color: #4FEBFE;
   }
   
-  p {
+  .wrapper p {
+    font-size: 1em;
     text-align: center;
     margin: 18px;
     font-family: 'Muli', sans-serif;
@@ -49,21 +50,28 @@ body {
   
   .icons {
     text-align: center;
-    
+  }
+  .home-icons{
+    text-align: end;
+    top: 0;
   }
   
+  .home-icons i,
   .icons i {
     color: #00091B;
     background: #fff;
-    height: 15px;
-    width: 15px;
-    padding: 13px;
-    margin: 0 10px;
-    border-radius: 50px;
-    border: 2px solid #fff;
+    height: 4px;
+    width: 75px;
+    padding: 16px;
+    margin: 0 3px;
+    border-radius: 50%;
+    border: 1px solid #fff;
     transition: all 200ms ease;
     text-decoration: none;
     position: relative;
+  }
+  .home-icons i{
+
   }
   
   .icons i:hover, .icons i:active {
