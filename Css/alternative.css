@@ -42,7 +42,7 @@ body {
 }
 .hero img {
   position: absolute;
-  transition: 1s ease-in-out;
+  /*transition: 1s ease-in-out;*/
 }
 .hero img:hover {
   mix-blend-mode: difference;

@@ -1,17 +1,14 @@
 body{
     background-color: var(--obsidianblack) ;
 
-<<<<<<< HEAD
 }
 .booker {
     display: none;
-=======
->>>>>>> 945dfad5b5fca4eeb73411a0df85928e5ab7451e
 }
 .contact{
    display: flex;
    overflow-x: hidden;
-   height:90vh;
+   height:100vh;
 }
 .questionnaire{
     width: 30%;
@@ -21,21 +18,24 @@ body{
     flex-direction: column;
     height: auto;
     justify-content: space-between;
+    cursor: none;
 }
 
 .contract{
     width: 70%;
     padding-left: 2em;
     display: flex;
-    height: auto;
     flex-direction: column;
     justify-content: space-between;
+    height: 100vh;
+    overflow-x: hidden;
 }
 .contract h1{
-    font-size: 250px;
-    letter-spacing: 3px;
-    display: block;
-    margin-bottom: 0;
+    font-size: 200px;
+    letter-spacing: 4px;
+    display: flex;
+    position: absolute;
+    top: 1.3em;
     pointer-events:none;
     color: var(--accentcolour);
     font-weight: bolder;
@@ -73,18 +73,20 @@ input[type="Email"] {
     flex-direction: row;
     gap: 1em;
     flex-wrap: wrap;
+    cursor: none;
 }
 
 .job-items label{
     text-transform: uppercase;
     font-size: 11px;
     color: var(--touchupcolour);
+    cursor: none;
 }
 .occasion{
     display: flex;
     gap: 0.5em;
     align-items: center;
-    cursor: pointer;
+    cursor: none;
 }
 form button{
     color: var(--black);
@@ -99,12 +101,19 @@ form button{
 form button:hover{
     color: var(--black);
     background-color: var(--accentcolour);
-    cursor: pointer;
+    cursor: none;
+    pointer-events: none;
 }
 
 .fillout{
-    width: 50%;
+    width: 30%;
     color: var(--whiteout);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    float: right;
+    right: 2em;
+    top: 4em;
 }
 .fillout p{
     font-size: 13px;

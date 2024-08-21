@@ -130,7 +130,8 @@ a {
 
 
 nav {
-  position: relative;
+  position: fixed;
+  z-index: 99999;
   width: 100vw;
   height: 10vh;
   display: flex;

@@ -187,16 +187,15 @@ class App {
                     trigger: '.hero',
                     start: 'top top',
                     end: 'bottom top',
-                    scrub: true,
-                    markers: true
+                    scrub: true
+                  
                 }
             });
 
             tlo.to(image, {
                 ease: 'none',
-                yPercent: gsap.utils.random(-100, -50)  + (index * 12), // Adjust parallax effect based on index
-                duration: .4,
-                scrub: true,  // Duration of the parallax effect
+                yPercent: gsap.utils.random(-60, -120)  + (index * 10), // Adjust parallax effect based on index
+                duration: 1 // Duration of the parallax effect
             }, 0);
         });
     }
