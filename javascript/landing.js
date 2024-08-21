@@ -163,7 +163,8 @@ tlo.to(".insight", {
             color: '#000'
         })
         gsap.set(".zunguka", {
-            transform: 'rotate(40deg)'
+            transform: 'rotate(40deg)',
+            borderRadius:  '6px'
         },"-=1")
         gsap.set(".fullwidth-image_text", {
             opacity: 0
@@ -193,7 +194,8 @@ tlo.to(".insight", {
         .to(".zunguka", {
             transform: 'rotate(0deg)',
             width: '100vw',
-            height: '100vh'
+            height: '100vh',
+             borderRadius:  '0px'
         }, '<')
         .to(".fullwidth-image_text", {
             opacity: 1
